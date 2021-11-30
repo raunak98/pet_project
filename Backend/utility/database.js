@@ -1,4 +1,5 @@
 var mysql = require('mysql')
+
 const config = {
   host: 'localhost',
   user: 'root',
@@ -29,25 +30,5 @@ class Database {
         } );
       }
     }
-    
-       
+         
 module.exports = new Database(config);
-
-
-
-// database.connect(function(err) {
-//     if (err) {
-//       console.error('error connecting: ' + err.stack);
-//       return;
-//     }
-//     console.log('connected as id ' + database.threadId);
-//   });
-
-// connection.query('SELECT * from candidate', function (err, rows, fields) {
-  //     if (err) throw err
-  
-//     console.log('The solution is: ', rows)
-// }
-// connection.end()
-
-
